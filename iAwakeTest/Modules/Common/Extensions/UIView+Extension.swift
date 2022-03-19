@@ -27,7 +27,7 @@ extension UIView {
         self.layer.masksToBounds = true
     }
     
-    func showAppLoader(withSize size: CGFloat = 100, clearBackground: Bool = true, useFullScreen: Bool = true) {
+    func showAppLoader(withSize size: CGFloat = 150, clearBackground: Bool = true, useFullScreen: Bool = true) {
         let size = size.relativeToIphone8Width()
         let appLoader = UIUtil.getAppLoader(height: size, width: size)
         appLoader.backgroundColor = UIColor.black.withAlphaComponent(0.3)
