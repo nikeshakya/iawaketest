@@ -15,7 +15,6 @@
 		943054CF27E4B35C00F1F479 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054CE27E4B35C00F1F479 /* AppColors.swift */; };
 		943054D127E4B36400F1F479 /* AppIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054D027E4B36400F1F479 /* AppIcons.swift */; };
 		943054DC27E4B47F00F1F479 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054DB27E4B47F00F1F479 /* ApiConstants.swift */; };
-		943054DE27E4B54500F1F479 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054DD27E4B54500F1F479 /* Date+Extension.swift */; };
 		943054E027E4B55000F1F479 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054DF27E4B55000F1F479 /* UIStoryboard+Extension.swift */; };
 		943054E227E4B55A00F1F479 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054E127E4B55A00F1F479 /* UIViewController+Extension.swift */; };
 		943054E427E4B56500F1F479 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943054E327E4B56500F1F479 /* UIView+Extension.swift */; };
@@ -45,6 +44,7 @@
 		9430552427E4CEA800F1F479 /* MediaProgramItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430552327E4CEA800F1F479 /* MediaProgramItemViewModel.swift */; };
 		9430552627E4DB9800F1F479 /* MediaProgramTrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430552527E4DB9800F1F479 /* MediaProgramTrackListViewModel.swift */; };
 		9430552827E4DC2300F1F479 /* MediaTrackItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430552727E4DC2300F1F479 /* MediaTrackItemViewModel.swift */; };
+		94BD4D9727E5C2F900F99910 /* app_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 94BD4D9627E5C2F900F99910 /* app_loader.json */; };
 		E371AAE55091216B08C1AA41 /* Pods_iAwakeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A057E2A60CE4E558147E5000 /* Pods_iAwakeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,6 @@
 		943054CE27E4B35C00F1F479 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		943054D027E4B36400F1F479 /* AppIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcons.swift; sourceTree = "<group>"; };
 		943054DB27E4B47F00F1F479 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
-		943054DD27E4B54500F1F479 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		943054DF27E4B55000F1F479 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		943054E127E4B55A00F1F479 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		943054E327E4B56500F1F479 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		9430552327E4CEA800F1F479 /* MediaProgramItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProgramItemViewModel.swift; sourceTree = "<group>"; };
 		9430552527E4DB9800F1F479 /* MediaProgramTrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProgramTrackListViewModel.swift; sourceTree = "<group>"; };
 		9430552727E4DC2300F1F479 /* MediaTrackItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTrackItemViewModel.swift; sourceTree = "<group>"; };
+		94BD4D9627E5C2F900F99910 /* app_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = app_loader.json; sourceTree = "<group>"; };
 		A057E2A60CE4E558147E5000 /* Pods_iAwakeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iAwakeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +139,7 @@
 		943054C627E4B31B00F1F479 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				94BD4D9527E5C21300F99910 /* Lottie */,
 				943054CA27E4B33A00F1F479 /* Icons */,
 				943054C927E4B33500F1F479 /* Colors */,
 				943054C827E4B33000F1F479 /* Strings */,
@@ -221,7 +222,6 @@
 		943054D627E4B41C00F1F479 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				943054DD27E4B54500F1F479 /* Date+Extension.swift */,
 				943054DF27E4B55000F1F479 /* UIStoryboard+Extension.swift */,
 				943054E127E4B55A00F1F479 /* UIViewController+Extension.swift */,
 				943054E327E4B56500F1F479 /* UIView+Extension.swift */,
@@ -370,6 +370,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		94BD4D9527E5C21300F99910 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				94BD4D9627E5C2F900F99910 /* app_loader.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		954B2C55D497754DBBAEA826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +458,7 @@
 				943054BF27E4B29200F1F479 /* LaunchScreen.storyboard in Resources */,
 				9430551127E4BF2A00F1F479 /* MediaLibrary.storyboard in Resources */,
 				9430550827E4B96100F1F479 /* Common.storyboard in Resources */,
+				94BD4D9727E5C2F900F99910 /* app_loader.json in Resources */,
 				943054BC27E4B29200F1F479 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +525,6 @@
 				9430551927E4C47C00F1F479 /* MediaProgramItemTableViewCell.swift in Sources */,
 				943054CF27E4B35C00F1F479 /* AppColors.swift in Sources */,
 				9430550027E4B86500F1F479 /* RoundedView.swift in Sources */,
-				943054DE27E4B54500F1F479 /* Date+Extension.swift in Sources */,
 				943054F627E4B73000F1F479 /* GenericError.swift in Sources */,
 				9430551627E4C42200F1F479 /* MediaLibraryTrackListViewController.swift in Sources */,
 				943054D127E4B36400F1F479 /* AppIcons.swift in Sources */,

@@ -44,7 +44,7 @@ class MediaLibraryProgramListViewController: UIViewController {
             return
         }
         guard !viewModel.isFetching else { return }
-        self.refreshControl.beginRefreshing()
+        self.showAppLoader()
         viewModel.fetchFreeLibraries()
     }
     
