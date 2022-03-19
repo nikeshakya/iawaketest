@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.5.0)
+  - lottie-ios (3.3.0)
+  - SDWebImage (5.12.3):
+    - SDWebImage/Core (= 5.12.3)
+  - SDWebImage/Core (5.12.3)
+  - SwiftyJSON (5.0.1)
+  - SZAVPlayer (1.3.3)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - SDWebImage
+  - SwiftyJSON
+  - SZAVPlayer
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - SDWebImage
+    - SwiftyJSON
+    - SZAVPlayer
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SZAVPlayer: a9d93a9c2040b7419e25a616269ec8c92d278423
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 90b228e5826e7551cbed7847e72af20712ecf76e
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Info Alert View Controller-->
+        <scene sceneID="mpG-NO-Pbm">
+            <objects>
+                <viewController storyboardIdentifier="appInfoAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qe8-wL-Fde" customClass="AppInfoAlertViewController" customModule="iAwakeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vy-YJ-ZN3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so7-OF-jFd" customClass="RoundedView" customModule="iAwakeTest" customModuleProvider="target">
+                                <rect key="frame" x="62" y="315" width="290" height="266"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-LB-Pu6">
+                                        <rect key="frame" x="20" y="20" width="250" height="226"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-Xt-6V2">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TgO-X7-g4C">
+                                                <rect key="frame" x="0.0" y="46.5" width="250" height="104.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="failure-alert-ic" translatesAutoresizingMaskIntoConstraints="NO" id="RfQ-3V-Xzh">
+                                                        <rect key="frame" x="90" y="0.0" width="70" height="70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="d8B-Wy-rPX" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" secondItem="RfQ-3V-Xzh" secondAttribute="height" multiplier="1:1" id="gtK-yf-744"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-pG-0XZ">
+                                                        <rect key="frame" x="105.5" y="85" width="39.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="opi-zS-GtC">
+                                                <rect key="frame" x="0.0" y="176" width="250" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjc-O7-4gx" customClass="RoundedView" customModule="iAwakeTest" customModuleProvider="target">
+                                                        <rect key="frame" x="37.5" y="0.0" width="175" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofC-Jn-zLY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Ok">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="confirmTapped:" destination="Qe8-wL-Fde" eventType="touchUpInside" id="P5Z-rO-f8S"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="appGreen"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ofC-Jn-zLY" firstAttribute="top" secondItem="Jjc-O7-4gx" secondAttribute="top" id="0Nm-8u-bfo"/>
+                                                            <constraint firstItem="ofC-Jn-zLY" firstAttribute="leading" secondItem="Jjc-O7-4gx" secondAttribute="leading" id="R1j-Nv-u6M"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ofC-Jn-zLY" secondAttribute="trailing" id="fM8-Do-8f0"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ofC-Jn-zLY" secondAttribute="bottom" id="gaH-u2-iWO"/>
+                                                            <constraint firstAttribute="height" constant="50" id="zED-lC-d4o" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Jjc-O7-4gx" firstAttribute="width" secondItem="opi-zS-GtC" secondAttribute="width" multiplier="0.7" id="HeY-qf-0Yl"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nWv-LB-Pu6" firstAttribute="leading" secondItem="so7-OF-jFd" secondAttribute="leading" constant="20" id="Jen-Ym-hob" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="nWv-LB-Pu6" secondAttribute="bottom" constant="20" id="WPq-Kk-MA5" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="nWv-LB-Pu6" firstAttribute="top" secondItem="so7-OF-jFd" secondAttribute="top" constant="20" id="ZiO-5L-2SV" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="nWv-LB-Pu6" secondAttribute="trailing" constant="20" id="djL-c3-vlV" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xp9-vc-4IF"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="so7-OF-jFd" firstAttribute="centerX" secondItem="7vy-YJ-ZN3" secondAttribute="centerX" id="FZ8-DH-brw"/>
+                            <constraint firstItem="so7-OF-jFd" firstAttribute="width" secondItem="7vy-YJ-ZN3" secondAttribute="width" multiplier="0.7" id="Pll-C1-xaM"/>
+                            <constraint firstItem="so7-OF-jFd" firstAttribute="centerY" secondItem="7vy-YJ-ZN3" secondAttribute="centerY" id="hay-3m-bFh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="ofC-Jn-zLY" id="ek8-J2-6Z4"/>
+                        <outlet property="messageLabel" destination="iKW-pG-0XZ" id="bM4-4E-KTp"/>
+                        <outlet property="messageStackView" destination="TgO-X7-g4C" id="hdQ-LF-ONL"/>
+                        <outlet property="statusIconView" destination="RfQ-3V-Xzh" id="9lz-FC-DQh"/>
+                        <outlet property="titleLabel" destination="bwL-Xt-6V2" id="nuT-GH-xVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69E-r8-oNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="-181"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="failure-alert-ic" width="100" height="100"/>
+        <namedColor name="appGreen">
+            <color red="0.42352941176470588" green="0.74509803921568629" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

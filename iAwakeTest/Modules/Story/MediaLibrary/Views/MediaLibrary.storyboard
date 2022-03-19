@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KXr-aS-qtp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Library Programs-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MediaLibraryProgramsVC" title="Media Library Programs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MediaLibraryProgramListViewController" customModule="iAwakeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="veA-eG-gYN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MediaProgramItemTableViewCell" id="vCb-Xp-8sG" customClass="MediaProgramItemTableViewCell" customModule="iAwakeTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vCb-Xp-8sG" id="goG-Wa-9Gn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0lM-Y0-rwt">
+                                                    <rect key="frame" x="15" y="15" width="384" height="60"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDF-t0-D0l" customClass="RoundedView" customModule="iAwakeTest" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TPv-DE-s8t">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="Ej0-Hs-qpe" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </constraint>
+                                                                        <constraint firstAttribute="height" constant="60" id="gMy-KH-Gmh" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </constraint>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="TPv-DE-s8t" secondAttribute="trailing" id="H3k-ae-cfx"/>
+                                                                <constraint firstItem="TPv-DE-s8t" firstAttribute="leading" secondItem="hDF-t0-D0l" secondAttribute="leading" id="V7G-5J-LRc"/>
+                                                                <constraint firstItem="TPv-DE-s8t" firstAttribute="top" secondItem="hDF-t0-D0l" secondAttribute="top" id="nxl-h4-8cq"/>
+                                                                <constraint firstAttribute="bottom" secondItem="TPv-DE-s8t" secondAttribute="bottom" id="pQe-52-SJS"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QFu-Xl-Um1">
+                                                            <rect key="frame" x="75" y="0.0" width="234" height="19.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXo-X0-Ofy">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="234" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <color key="textColor" name="appBlack"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23v-qV-ZZC">
+                                                                    <rect key="frame" x="0.0" y="21.5" width="234" height="18"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <variation key="default">
+                                                                <mask key="subviews">
+                                                                    <exclude reference="23v-qV-ZZC"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lbX-y9-Hwk">
+                                                            <rect key="frame" x="324" y="0.0" width="60" height="39.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-i6-CIb">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <color key="textColor" name="appBlack"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWL-Ud-aqZ">
+                                                                    <rect key="frame" x="0.0" y="21.5" width="60" height="18"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="MZz-wK-BWl" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </constraint>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0lM-Y0-rwt" firstAttribute="leading" secondItem="goG-Wa-9Gn" secondAttribute="leading" constant="15" id="78N-65-KBO" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstAttribute="bottom" secondItem="0lM-Y0-rwt" secondAttribute="bottom" constant="15" id="dx9-57-Qf5" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstAttribute="trailing" secondItem="0lM-Y0-rwt" secondAttribute="trailing" constant="15" id="erf-Ih-Jyg" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstItem="0lM-Y0-rwt" firstAttribute="top" secondItem="goG-Wa-9Gn" secondAttribute="top" constant="15" id="gOK-YU-ePG" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="23v-qV-ZZC" id="F2s-CM-ae2"/>
+                                            <outlet property="programBannerImageView" destination="TPv-DE-s8t" id="ZnM-cn-qyr"/>
+                                            <outlet property="titleLabel" destination="nXo-X0-Ofy" id="ujh-3t-YBZ"/>
+                                            <outlet property="tracksCountLabel" destination="Oq0-i6-CIb" id="2G8-89-4Wa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="veA-eG-gYN" secondAttribute="trailing" id="2XE-7d-k7Z"/>
+                            <constraint firstItem="veA-eG-gYN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VXc-h3-QHU"/>
+                            <constraint firstItem="veA-eG-gYN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mFb-R0-oE8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="veA-eG-gYN" secondAttribute="bottom" id="yhk-0Q-wGJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cnP-xb-lmc"/>
+                    <connections>
+                        <outlet property="tableView" destination="veA-eG-gYN" id="sSw-qi-7y2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="96.428571428571431"/>
+        </scene>
+        <!--Tracks-->
+        <scene sceneID="0aZ-RS-QwQ">
+            <objects>
+                <viewController storyboardIdentifier="MediaProgramTracksVC" title="Tracks" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Svf-eC-dTw" customClass="MediaLibraryTrackListViewController" customModule="iAwakeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YQG-RQ-JGz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qd8-ZG-WJH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MediaTrackItemTableViewCell" id="3Sv-Ki-9bf" customClass="MediaTrackItemTableViewCell" customModule="iAwakeTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="77.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Sv-Ki-9bf" id="BQT-gI-LOI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TDe-ay-3Pf">
+                                                    <rect key="frame" x="15" y="10" width="384" height="57.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uQE-Bc-AEC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="309" height="57.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio-pause-ic" translatesAutoresizingMaskIntoConstraints="NO" id="brm-Sn-1Xk">
+                                                                    <rect key="frame" x="0.0" y="9" width="40" height="40"/>
+                                                                    <color key="tintColor" name="appBlack"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="40" id="IfQ-6o-Zrw" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </constraint>
+                                                                        <constraint firstAttribute="height" constant="40" id="aaw-EB-G64" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </constraint>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lyb-h2-FAV">
+                                                                    <rect key="frame" x="55" y="0.0" width="254" height="57.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5X-9l-tll">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="254" height="19.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                            <color key="textColor" name="appBlack"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description asdasd asd asd asd asd asd asd asda sdasda s " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoe-xg-WRd">
+                                                                            <rect key="frame" x="0.0" y="21.5" width="254" height="36"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-QF-FBg">
+                                                            <rect key="frame" x="324" y="19" width="60" height="19.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="k0G-g5-q0P" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" name="appBlack"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TDe-ay-3Pf" firstAttribute="top" secondItem="BQT-gI-LOI" secondAttribute="top" constant="10" id="KUh-Hx-edv" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstItem="TDe-ay-3Pf" firstAttribute="leading" secondItem="BQT-gI-LOI" secondAttribute="leading" constant="15" id="TBV-7C-hhk" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstAttribute="bottom" secondItem="TDe-ay-3Pf" secondAttribute="bottom" constant="10" id="U3u-gX-Xva" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstAttribute="trailing" secondItem="TDe-ay-3Pf" secondAttribute="trailing" constant="15" id="vBW-Mg-yZY" customClass="AdaptiveLayoutConstraint" customModule="iAwakeTest" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playPauseIconView" destination="brm-Sn-1Xk" id="gcR-H4-lPI"/>
+                                            <outlet property="trackDescriptionLabel" destination="qoe-xg-WRd" id="kWW-Cw-xgU"/>
+                                            <outlet property="trackDurationLabel" destination="3dR-QF-FBg" id="Jcu-6B-Mxx"/>
+                                            <outlet property="trackTitleLabel" destination="e5X-9l-tll" id="bxq-dK-BOc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d5b-h5-hA3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qd8-ZG-WJH" firstAttribute="top" secondItem="d5b-h5-hA3" secondAttribute="top" id="5r9-XZ-AKv"/>
+                            <constraint firstItem="d5b-h5-hA3" firstAttribute="trailing" secondItem="Qd8-ZG-WJH" secondAttribute="trailing" id="LUh-In-Rrd"/>
+                            <constraint firstItem="Qd8-ZG-WJH" firstAttribute="leading" secondItem="YQG-RQ-JGz" secondAttribute="leading" id="xZi-P8-rO3"/>
+                            <constraint firstItem="d5b-h5-hA3" firstAttribute="bottom" secondItem="Qd8-ZG-WJH" secondAttribute="bottom" id="zKN-rS-PJZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Qd8-ZG-WJH" id="hRI-YW-nMd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9a5-ku-9o8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BQi-Ku-ac8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KXr-aS-qtp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kQT-JF-cvi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="appBlack"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="EEW-9C-y6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m73-QV-kwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audio-pause-ic" width="50" height="50"/>
+        <namedColor name="appBlack">
+            <color red="0.2630000114440918" green="0.2669999897480011" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
